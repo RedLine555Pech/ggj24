@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://cb2faq4rpbfng"]
+
+[ext_resource type="Script" path="res://scripts/MusicManager.gd" id="1_d2gu1"]
+[ext_resource type="AudioStream" uid="uid://dsfy3yjfp83s1" path="res://music/Event Music 4.ogg" id="2_08pmw"]
+
+[node name="MusicManager" type="Node"]
+process_mode = 3
+script = ExtResource("1_d2gu1")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_08pmw")
+volume_db = -7.0
+autoplay = true

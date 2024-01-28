@@ -1,0 +1,50 @@
+[gd_scene load_steps=7 format=3 uid="uid://d2i2st3b51jq0"]
+
+[ext_resource type="Script" path="res://scripts/Level.gd" id="1_1y266"]
+[ext_resource type="PackedScene" uid="uid://qc0gy1ey7kh5" path="res://prefabs/pike.tscn" id="2_s3k7j"]
+[ext_resource type="PackedScene" uid="uid://b2tyedb5pxwka" path="res://prefabs/collectable.tscn" id="3_sf2lx"]
+[ext_resource type="PackedScene" uid="uid://8tbsekjla5v7" path="res://prefabs/fade_platform.tscn" id="4_5ec4c"]
+[ext_resource type="PackedScene" uid="uid://bfoijwmhsqyck" path="res://prefabs/move_collectable.tscn" id="5_gsg4c"]
+[ext_resource type="PackedScene" uid="uid://bao60qawichnn" path="res://prefabs/platform.tscn" id="6_i4jft"]
+
+[node name="Level9" type="Node2D"]
+script = ExtResource("1_1y266")
+start_mood = 10
+
+[node name="Pike5" parent="." instance=ExtResource("2_s3k7j")]
+position = Vector2(662, 521)
+
+[node name="Pike6" parent="." instance=ExtResource("2_s3k7j")]
+position = Vector2(1270, 581)
+
+[node name="Pike7" parent="." instance=ExtResource("2_s3k7j")]
+position = Vector2(1659, 581)
+
+[node name="FadePlatform" parent="." instance=ExtResource("4_5ec4c")]
+position = Vector2(970, 583)
+
+[node name="FadePlatform2" parent="." instance=ExtResource("4_5ec4c")]
+position = Vector2(425, 388)
+
+[node name="FadePlatform10" parent="." instance=ExtResource("4_5ec4c")]
+position = Vector2(1271, 829)
+
+[node name="MoveCollectabe" parent="." instance=ExtResource("5_gsg4c")]
+position = Vector2(1400, 499)
+move_pos = Vector2(0, -200)
+
+[node name="MoveCollectabe3" parent="." instance=ExtResource("5_gsg4c")]
+position = Vector2(1521, 327)
+move_pos = Vector2(0, 200)
+
+[node name="Collectable2" parent="." instance=ExtResource("3_sf2lx")]
+position = Vector2(424, 308)
+
+[node name="Platform" parent="." instance=ExtResource("6_i4jft")]
+position = Vector2(425, 489)
+
+[node name="FadePlatform3" parent="." instance=ExtResource("4_5ec4c")]
+position = Vector2(425, 736)
+
+[node name="Collectable" parent="." instance=ExtResource("3_sf2lx")]
+position = Vector2(426, 673)

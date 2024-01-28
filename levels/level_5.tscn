@@ -1,0 +1,41 @@
+[gd_scene load_steps=7 format=3 uid="uid://cg51ym5f6ttcw"]
+
+[ext_resource type="Script" path="res://scripts/Level.gd" id="1_qlaeo"]
+[ext_resource type="PackedScene" uid="uid://qc0gy1ey7kh5" path="res://prefabs/pike.tscn" id="2_xpkfw"]
+[ext_resource type="PackedScene" uid="uid://b2tyedb5pxwka" path="res://prefabs/collectable.tscn" id="3_1gxas"]
+[ext_resource type="PackedScene" uid="uid://bao60qawichnn" path="res://prefabs/platform.tscn" id="4_aq5kr"]
+[ext_resource type="PackedScene" uid="uid://bfoijwmhsqyck" path="res://prefabs/move_collectable.tscn" id="5_0vxss"]
+[ext_resource type="PackedScene" uid="uid://8tbsekjla5v7" path="res://prefabs/fade_platform.tscn" id="6_j10pi"]
+
+[node name="Level5" type="Node2D"]
+script = ExtResource("1_qlaeo")
+start_mood = 10
+
+[node name="Pike2" parent="." instance=ExtResource("2_xpkfw")]
+position = Vector2(796, 580)
+
+[node name="Collectable" parent="." instance=ExtResource("3_1gxas")]
+position = Vector2(317, 618)
+
+[node name="Collectable3" parent="." instance=ExtResource("3_1gxas")]
+position = Vector2(1637, 502)
+
+[node name="Platform" parent="." instance=ExtResource("4_aq5kr")]
+position = Vector2(326, 715)
+
+[node name="Platform2" parent="." instance=ExtResource("4_aq5kr")]
+position = Vector2(1639, 582)
+
+[node name="MoveCollectabe" parent="." instance=ExtResource("5_0vxss")]
+position = Vector2(951, 518)
+time = 1.0
+move_pos = Vector2(0, -200)
+
+[node name="FadePlatform" parent="." instance=ExtResource("6_j10pi")]
+position = Vector2(653, 836)
+
+[node name="FadePlatform2" parent="." instance=ExtResource("6_j10pi")]
+position = Vector2(1410, 584)
+
+[node name="FadePlatform3" parent="." instance=ExtResource("6_j10pi")]
+position = Vector2(1171, 584)

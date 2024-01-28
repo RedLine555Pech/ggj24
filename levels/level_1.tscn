@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://rd127io240vj"]
+
+[ext_resource type="Script" path="res://scripts/Level.gd" id="1_eglnf"]
+[ext_resource type="PackedScene" uid="uid://bao60qawichnn" path="res://prefabs/platform.tscn" id="2_j0nsl"]
+[ext_resource type="PackedScene" uid="uid://b2tyedb5pxwka" path="res://prefabs/collectable.tscn" id="2_kqf3p"]
+
+[node name="Level1" type="Node2D"]
+script = ExtResource("1_eglnf")
+start_mood = 10
+
+[node name="Platform" parent="." instance=ExtResource("2_j0nsl")]
+position = Vector2(1692, 835)
+
+[node name="Collectable" parent="." instance=ExtResource("2_kqf3p")]
+position = Vector2(1485, 959)
+
+[node name="Collectable2" parent="." instance=ExtResource("2_kqf3p")]
+position = Vector2(1687, 731)

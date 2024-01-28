@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://pd2wn2otut5x"]
+
+[ext_resource type="Script" path="res://scripts/Level.gd" id="1_muv8x"]
+[ext_resource type="PackedScene" uid="uid://qc0gy1ey7kh5" path="res://prefabs/pike.tscn" id="2_vcvqe"]
+[ext_resource type="PackedScene" uid="uid://b2tyedb5pxwka" path="res://prefabs/collectable.tscn" id="3_8tuxg"]
+
+[node name="Level2" type="Node2D"]
+script = ExtResource("1_muv8x")
+start_mood = 10
+
+[node name="Pike" parent="." instance=ExtResource("2_vcvqe")]
+position = Vector2(430, 750)
+
+[node name="Pike2" parent="." instance=ExtResource("2_vcvqe")]
+position = Vector2(1752, 750)
+
+[node name="Collectable" parent="." instance=ExtResource("3_8tuxg")]
+position = Vector2(718, 539)
+
+[node name="Collectable2" parent="." instance=ExtResource("3_8tuxg")]
+position = Vector2(1745, 502)

@@ -1,0 +1,154 @@
+[gd_scene load_steps=30 format=3 uid="uid://dkicwewynj2m6"]
+
+[ext_resource type="Script" path="res://scripts/Dog.gd" id="1_dc52c"]
+[ext_resource type="Texture2D" uid="uid://cjyefp8rtkjnu" path="res://sprites/characters/dog/Bite/Dog_bite_00.png" id="2_3jtk8"]
+[ext_resource type="Texture2D" uid="uid://dp62f3up2iaiy" path="res://sprites/characters/dog/Bite/Dog_bite_01.png" id="3_rw31a"]
+[ext_resource type="Texture2D" uid="uid://byrhjh24m8mr8" path="res://sprites/characters/dog/Bite/Dog_bite_02.png" id="4_gqo4g"]
+[ext_resource type="Texture2D" uid="uid://bmvtm06qbig7s" path="res://sprites/characters/dog/Bite/Dog_bite_03.png" id="5_0into"]
+[ext_resource type="Texture2D" uid="uid://b1q0rimi5vwuw" path="res://sprites/characters/dog/Bite/Dog_bite_04.png" id="6_bo2ym"]
+[ext_resource type="Texture2D" uid="uid://b62g1yj8gnyk5" path="res://sprites/characters/dog/Bite/Dog_bite_05.png" id="7_cetu1"]
+[ext_resource type="Texture2D" uid="uid://b3dgxbq5xg6nd" path="res://sprites/characters/dog/Bite/Dog_bite_06.png" id="8_50x68"]
+[ext_resource type="Texture2D" uid="uid://b5l38xp0h3di5" path="res://sprites/characters/dog/Bite/Dog_bite_07.png" id="9_pdjtk"]
+[ext_resource type="Texture2D" uid="uid://0nkv75ecnxq0" path="res://sprites/characters/dog/Bite/Dog_bite_08.png" id="10_1rnma"]
+[ext_resource type="Texture2D" uid="uid://12486l0mlngr" path="res://sprites/characters/dog/Bite/Dog_bite_09.png" id="11_v65hv"]
+[ext_resource type="Texture2D" uid="uid://vwd3y381q5q3" path="res://sprites/characters/dog/Bite/Dog_bite_10.png" id="12_1nidr"]
+[ext_resource type="Texture2D" uid="uid://73ermklwelgd" path="res://sprites/characters/dog/Bite/Dog_bite_11.png" id="13_sskhq"]
+[ext_resource type="Texture2D" uid="uid://donmg0d3hehax" path="res://sprites/characters/dog/Bite/Dog_bite_12.png" id="14_vexkt"]
+[ext_resource type="Texture2D" uid="uid://c5mqnbcx0q20h" path="res://sprites/characters/dog/Run/Dog_run_00.png" id="15_2hquk"]
+[ext_resource type="Texture2D" uid="uid://b5xjxykv64s3h" path="res://sprites/characters/dog/Run/Dog_run_01.png" id="16_hu1uh"]
+[ext_resource type="Texture2D" uid="uid://cmaq8iwdeop7m" path="res://sprites/characters/dog/Run/Dog_run_02.png" id="17_tlsik"]
+[ext_resource type="Texture2D" uid="uid://f0yse28k04w7" path="res://sprites/characters/dog/Run/Dog_run_03.png" id="18_b0ox7"]
+[ext_resource type="Texture2D" uid="uid://cm6ig20bw5ege" path="res://sprites/characters/dog/Run/Dog_run_04.png" id="19_5ligc"]
+[ext_resource type="Texture2D" uid="uid://bvxsvgpgib6q0" path="res://sprites/characters/dog/Run/Dog_run_05.png" id="20_k17jt"]
+[ext_resource type="Texture2D" uid="uid://8soaokm01jss" path="res://sprites/characters/dog/Run/Dog_run_06.png" id="21_2wxw3"]
+[ext_resource type="Texture2D" uid="uid://ceqk1tdkxiivk" path="res://sprites/characters/dog/Run/Dog_run_07.png" id="22_0iw5u"]
+[ext_resource type="Texture2D" uid="uid://dc4ww5ebd3arn" path="res://sprites/characters/dog/Run/Dog_run_08.png" id="23_barcm"]
+[ext_resource type="Texture2D" uid="uid://ckmfgyy0khm67" path="res://sprites/characters/dog/Run/Dog_run_09.png" id="24_scp7s"]
+[ext_resource type="Texture2D" uid="uid://vym024nf8ic" path="res://sprites/characters/dog/Run/Dog_run_10.png" id="25_4raxj"]
+[ext_resource type="Texture2D" uid="uid://dksjsfi83or2g" path="res://sprites/characters/dog/Run/Dog_run_11.png" id="26_v60vg"]
+[ext_resource type="Texture2D" uid="uid://qyfhhyrv1nuu" path="res://sprites/characters/dog/Run/Dog_run_12.png" id="27_ud6rn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tph64"]
+size = Vector2(122, 93)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_na77i"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_3jtk8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_rw31a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_gqo4g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_0into")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_bo2ym")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_cetu1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_50x68")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_pdjtk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_1rnma")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_v65hv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_1nidr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_sskhq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_vexkt")
+}],
+"loop": false,
+"name": &"bite",
+"speed": 30.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_2hquk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_hu1uh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_tlsik")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_b0ox7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_5ligc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_k17jt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_2wxw3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_0iw5u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_barcm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_scp7s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_4raxj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_v60vg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_ud6rn")
+}],
+"loop": true,
+"name": &"run",
+"speed": 30.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_vexkt")
+}],
+"loop": true,
+"name": &"stop",
+"speed": 30.0
+}]
+
+[node name="Dog" type="Area2D" groups=["dogs"]]
+position = Vector2(-126, 996)
+collision_layer = 32
+collision_mask = 4
+script = ExtResource("1_dc52c")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-11, -21.5)
+shape = SubResource("RectangleShape2D_tph64")
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+z_index = 1
+position = Vector2(-36, -43)
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_na77i")
+animation = &"stop"
+frame_progress = 0.262518
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

@@ -1,0 +1,71 @@
+[gd_scene load_steps=6 format=3 uid="uid://bxb31ga2qpmwj"]
+
+[ext_resource type="Script" path="res://scripts/Level.gd" id="1_14n0t"]
+[ext_resource type="PackedScene" uid="uid://qc0gy1ey7kh5" path="res://prefabs/pike.tscn" id="2_aiwcx"]
+[ext_resource type="PackedScene" uid="uid://8tbsekjla5v7" path="res://prefabs/fade_platform.tscn" id="3_3aol8"]
+[ext_resource type="PackedScene" uid="uid://b2tyedb5pxwka" path="res://prefabs/collectable.tscn" id="5_w5gfo"]
+[ext_resource type="PackedScene" uid="uid://bao60qawichnn" path="res://prefabs/platform.tscn" id="6_5oo8a"]
+
+[node name="Level10" type="Node2D"]
+script = ExtResource("1_14n0t")
+start_mood = 10
+
+[node name="Pike5" parent="." instance=ExtResource("2_aiwcx")]
+position = Vector2(662, 521)
+
+[node name="Pike6" parent="." instance=ExtResource("2_aiwcx")]
+position = Vector2(1362, 505)
+
+[node name="Pike7" parent="." instance=ExtResource("2_aiwcx")]
+position = Vector2(1362, 837)
+
+[node name="FadePlatform" parent="." instance=ExtResource("3_3aol8")]
+position = Vector2(958, 583)
+
+[node name="FadePlatform2" parent="." instance=ExtResource("3_3aol8")]
+position = Vector2(402, 458)
+
+[node name="FadePlatform6" parent="." instance=ExtResource("3_3aol8")]
+position = Vector2(402, 562)
+
+[node name="Collectable3" parent="." instance=ExtResource("5_w5gfo")]
+position = Vector2(1809, 425)
+
+[node name="Collectable4" parent="." instance=ExtResource("5_w5gfo")]
+position = Vector2(957, 490)
+
+[node name="Collectable2" parent="." instance=ExtResource("5_w5gfo")]
+position = Vector2(85, 373)
+
+[node name="Platform" parent="." instance=ExtResource("6_5oo8a")]
+position = Vector2(272, 455)
+
+[node name="Platform2" parent="." instance=ExtResource("6_5oo8a")]
+position = Vector2(151, 455)
+
+[node name="Platform3" parent="." instance=ExtResource("6_5oo8a")]
+position = Vector2(23, 455)
+
+[node name="Platform4" parent="." instance=ExtResource("6_5oo8a")]
+position = Vector2(272, 661)
+
+[node name="Platform6" parent="." instance=ExtResource("6_5oo8a")]
+position = Vector2(23, 661)
+
+[node name="FadePlatform3" parent="." instance=ExtResource("3_3aol8")]
+position = Vector2(402, 785)
+
+[node name="FadePlatform8" parent="." instance=ExtResource("3_3aol8")]
+position = Vector2(402, 785)
+
+[node name="FadePlatform7" parent="." instance=ExtResource("3_3aol8")]
+position = Vector2(151, 661)
+
+[node name="FadePlatform4" parent="." instance=ExtResource("3_3aol8")]
+position = Vector2(1594, 688)
+
+[node name="FadePlatform5" parent="." instance=ExtResource("3_3aol8")]
+position = Vector2(1810, 516)
+
+[node name="Collectable" parent="." instance=ExtResource("5_w5gfo")]
+position = Vector2(87, 586)

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dsfy3yjfp83s1"
+path="res://.godot/imported/Event Music 4.ogg-5d857a581c7e280b05d1745765f913b6.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/Event Music 4.ogg"
+dest_files=["res://.godot/imported/Event Music 4.ogg-5d857a581c7e280b05d1745765f913b6.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0.0
+bpm=100.0
+beat_count=0
+bar_beats=4

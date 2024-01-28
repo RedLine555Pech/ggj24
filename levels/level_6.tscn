@@ -1,0 +1,64 @@
+[gd_scene load_steps=5 format=3 uid="uid://chggx6mapchyh"]
+
+[ext_resource type="Script" path="res://scripts/Level.gd" id="1_gkd5p"]
+[ext_resource type="PackedScene" uid="uid://qc0gy1ey7kh5" path="res://prefabs/pike.tscn" id="2_syf4d"]
+[ext_resource type="PackedScene" uid="uid://b2tyedb5pxwka" path="res://prefabs/collectable.tscn" id="3_gf2f1"]
+[ext_resource type="PackedScene" uid="uid://bao60qawichnn" path="res://prefabs/platform.tscn" id="4_s1ogv"]
+
+[node name="Level6" type="Node2D"]
+script = ExtResource("1_gkd5p")
+start_mood = 10
+
+[node name="Pike3" parent="." instance=ExtResource("2_syf4d")]
+position = Vector2(466, 297)
+
+[node name="Pike2" parent="." instance=ExtResource("2_syf4d")]
+position = Vector2(466, 600)
+
+[node name="Pike4" parent="." instance=ExtResource("2_syf4d")]
+position = Vector2(721, 297)
+
+[node name="Pike5" parent="." instance=ExtResource("2_syf4d")]
+position = Vector2(721, 600)
+
+[node name="Collectable" parent="." instance=ExtResource("3_gf2f1")]
+position = Vector2(467, 205)
+
+[node name="Collectable2" parent="." instance=ExtResource("3_gf2f1")]
+position = Vector2(721, 196)
+
+[node name="Collectable4" parent="." instance=ExtResource("3_gf2f1")]
+position = Vector2(721, 524)
+
+[node name="Collectable5" parent="." instance=ExtResource("3_gf2f1")]
+position = Vector2(463, 517)
+
+[node name="Platform" parent="." instance=ExtResource("4_s1ogv")]
+position = Vector2(234, 870)
+
+[node name="Platform2" parent="." instance=ExtResource("4_s1ogv")]
+position = Vector2(1656, 870)
+
+[node name="Pike6" parent="." instance=ExtResource("2_syf4d")]
+position = Vector2(1167, 297)
+
+[node name="Pike7" parent="." instance=ExtResource("2_syf4d")]
+position = Vector2(1167, 600)
+
+[node name="Pike8" parent="." instance=ExtResource("2_syf4d")]
+position = Vector2(1422, 297)
+
+[node name="Pike9" parent="." instance=ExtResource("2_syf4d")]
+position = Vector2(1422, 600)
+
+[node name="Collectable3" parent="." instance=ExtResource("3_gf2f1")]
+position = Vector2(1168, 205)
+
+[node name="Collectable6" parent="." instance=ExtResource("3_gf2f1")]
+position = Vector2(1422, 196)
+
+[node name="Collectable7" parent="." instance=ExtResource("3_gf2f1")]
+position = Vector2(1422, 524)
+
+[node name="Collectable8" parent="." instance=ExtResource("3_gf2f1")]
+position = Vector2(1164, 517)

@@ -1,0 +1,507 @@
+[gd_scene load_steps=22 format=3 uid="uid://10t8wg68gau7"]
+
+[ext_resource type="Texture2D" uid="uid://drdynanxm6v6q" path="res://sprites/ui/background_menu.png" id="1_1fsiu"]
+[ext_resource type="Script" path="res://scripts/ui/MenuScript.gd" id="1_l8s2a"]
+[ext_resource type="Texture2D" uid="uid://cwtlf480nqfuq" path="res://sprites/ui/background_levels.png" id="2_lc0a4"]
+[ext_resource type="Texture2D" uid="uid://bfe5htdxsewgn" path="res://sprites/ui/background_ui.png" id="3_6m226"]
+[ext_resource type="Texture2D" uid="uid://dlmf0wsyk5t0q" path="res://sprites/ui/button_big_normal.png" id="4_nv6ej"]
+[ext_resource type="Texture2D" uid="uid://df53tw8ahjvu3" path="res://sprites/ui/button_big_active.png" id="5_7nuky"]
+[ext_resource type="FontFile" uid="uid://bo1dvc8ikykbs" path="res://font/Satisfy-Regular.ttf" id="6_pjcxg"]
+[ext_resource type="Texture2D" uid="uid://d0ue8cvkng4y2" path="res://sprites/ui/button_instagram_normal.png" id="7_rjw2d"]
+[ext_resource type="Texture2D" uid="uid://dnntuxibvvuby" path="res://sprites/ui/button_little_active.png" id="8_3i5be"]
+[ext_resource type="Script" path="res://scripts/ui/LinkButton.gd" id="9_1v4er"]
+[ext_resource type="Texture2D" uid="uid://kgn3uf44moln" path="res://sprites/ui/button_TTG_normal.png" id="9_m14nh"]
+[ext_resource type="Texture2D" uid="uid://of3mdw1r2ipw" path="res://sprites/ui/button_TTG_active.png" id="10_25ini"]
+[ext_resource type="Texture2D" uid="uid://b6c6w28f54k2w" path="res://sprites/ui/button_discord_normal.png" id="11_2evle"]
+[ext_resource type="Texture2D" uid="uid://be7rj0wkwollw" path="res://sprites/ui/button_discord_active.png" id="12_q5sew"]
+[ext_resource type="Texture2D" uid="uid://xhh2i5a2s421" path="res://sprites/ui/made_in_Ukraine.png" id="13_78ykv"]
+[ext_resource type="Texture2D" uid="uid://cqybmyqcwb5ip" path="res://sprites/ui/button_little_normal.png" id="14_7drje"]
+[ext_resource type="Script" path="res://scripts/ui/LevelButton.gd" id="17_f1gvg"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_t3rf2"]
+font_size = 70
+font_color = Color(0.290196, 0.0627451, 0.0627451, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_6gnst"]
+font_size = 60
+font_color = Color(0.866667, 0.866667, 0.866667, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_u33mu"]
+font_size = 60
+font_color = Color(0.866667, 0.866667, 0.866667, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_ko8j4"]
+font_size = 60
+font_color = Color(0.866667, 0.866667, 0.866667, 1)
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_l8s2a")
+
+[node name="BG_Main" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -960.5
+offset_top = -540.0
+offset_right = 960.5
+offset_bottom = 540.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_1fsiu")
+
+[node name="BG_Levels" type="TextureRect" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -960.5
+offset_top = -540.0
+offset_right = 960.5
+offset_bottom = 540.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_lc0a4")
+
+[node name="BG_Credits" type="TextureRect" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -960.5
+offset_top = -540.0
+offset_right = 960.5
+offset_bottom = 540.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_6m226")
+
+[node name="MainMenu" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -244.0
+offset_top = -185.0
+offset_right = 244.0
+offset_bottom = 517.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="PlayButton" type="TextureButton" parent="MainMenu"]
+layout_mode = 2
+texture_normal = ExtResource("4_nv6ej")
+texture_pressed = ExtResource("5_7nuky")
+
+[node name="Label" type="Label" parent="MainMenu/PlayButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("6_pjcxg")
+text = "Play"
+label_settings = SubResource("LabelSettings_t3rf2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CreditButton" type="TextureButton" parent="MainMenu"]
+layout_mode = 2
+texture_normal = ExtResource("4_nv6ej")
+texture_pressed = ExtResource("5_7nuky")
+
+[node name="Label" type="Label" parent="MainMenu/CreditButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("6_pjcxg")
+text = "Credits"
+label_settings = SubResource("LabelSettings_t3rf2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MainMenu"]
+layout_mode = 2
+
+[node name="InstButton" type="TextureButton" parent="MainMenu/HBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("7_rjw2d")
+texture_pressed = ExtResource("8_3i5be")
+script = ExtResource("9_1v4er")
+link = "https://www.instagram.com/tobitorbagames"
+
+[node name="TwitterButton" type="TextureButton" parent="MainMenu/HBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("9_m14nh")
+texture_pressed = ExtResource("10_25ini")
+script = ExtResource("9_1v4er")
+link = "https://twitter.com/TobiTorbaGames"
+
+[node name="DiscordButton" type="TextureButton" parent="MainMenu/HBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("11_2evle")
+texture_pressed = ExtResource("12_q5sew")
+script = ExtResource("9_1v4er")
+link = "https://discord.com/invite/FTjpE5qqCg"
+
+[node name="Panel" type="TextureRect" parent="MainMenu"]
+layout_mode = 2
+texture = ExtResource("13_78ykv")
+
+[node name="LevelSelect" type="VBoxContainer" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -405.0
+offset_top = -178.0
+offset_right = 406.0
+offset_bottom = 309.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="LevelSelect"]
+layout_mode = 2
+
+[node name="Button1" type="TextureButton" parent="LevelSelect/HBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("14_7drje")
+texture_pressed = ExtResource("8_3i5be")
+texture_disabled = ExtResource("14_7drje")
+script = ExtResource("17_f1gvg")
+level = 1
+
+[node name="Label" type="Label" parent="LevelSelect/HBoxContainer/Button1"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("6_pjcxg")
+text = "1"
+label_settings = SubResource("LabelSettings_t3rf2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button2" type="TextureButton" parent="LevelSelect/HBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("14_7drje")
+texture_pressed = ExtResource("8_3i5be")
+texture_disabled = ExtResource("14_7drje")
+script = ExtResource("17_f1gvg")
+level = 2
+
+[node name="Label" type="Label" parent="LevelSelect/HBoxContainer/Button2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("6_pjcxg")
+text = "2"
+label_settings = SubResource("LabelSettings_t3rf2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button3" type="TextureButton" parent="LevelSelect/HBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("14_7drje")
+texture_pressed = ExtResource("8_3i5be")
+texture_disabled = ExtResource("14_7drje")
+script = ExtResource("17_f1gvg")
+level = 3
+
+[node name="Label" type="Label" parent="LevelSelect/HBoxContainer/Button3"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("6_pjcxg")
+text = "3"
+label_settings = SubResource("LabelSettings_t3rf2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button4" type="TextureButton" parent="LevelSelect/HBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("14_7drje")
+texture_pressed = ExtResource("8_3i5be")
+texture_disabled = ExtResource("14_7drje")
+script = ExtResource("17_f1gvg")
+level = 4
+
+[node name="Label" type="Label" parent="LevelSelect/HBoxContainer/Button4"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("6_pjcxg")
+text = "4"
+label_settings = SubResource("LabelSettings_t3rf2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button5" type="TextureButton" parent="LevelSelect/HBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("14_7drje")
+texture_pressed = ExtResource("8_3i5be")
+texture_disabled = ExtResource("14_7drje")
+script = ExtResource("17_f1gvg")
+level = 5
+
+[node name="Label" type="Label" parent="LevelSelect/HBoxContainer/Button5"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("6_pjcxg")
+text = "5"
+label_settings = SubResource("LabelSettings_t3rf2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="LevelSelect"]
+layout_mode = 2
+
+[node name="Button6" type="TextureButton" parent="LevelSelect/HBoxContainer2"]
+layout_mode = 2
+texture_normal = ExtResource("14_7drje")
+texture_pressed = ExtResource("8_3i5be")
+texture_disabled = ExtResource("14_7drje")
+script = ExtResource("17_f1gvg")
+level = 6
+
+[node name="Label" type="Label" parent="LevelSelect/HBoxContainer2/Button6"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("6_pjcxg")
+text = "6
+"
+label_settings = SubResource("LabelSettings_t3rf2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button7" type="TextureButton" parent="LevelSelect/HBoxContainer2"]
+layout_mode = 2
+texture_normal = ExtResource("14_7drje")
+texture_pressed = ExtResource("8_3i5be")
+texture_disabled = ExtResource("14_7drje")
+script = ExtResource("17_f1gvg")
+level = 7
+
+[node name="Label" type="Label" parent="LevelSelect/HBoxContainer2/Button7"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("6_pjcxg")
+text = "7
+"
+label_settings = SubResource("LabelSettings_t3rf2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button8" type="TextureButton" parent="LevelSelect/HBoxContainer2"]
+layout_mode = 2
+texture_normal = ExtResource("14_7drje")
+texture_pressed = ExtResource("8_3i5be")
+texture_disabled = ExtResource("14_7drje")
+script = ExtResource("17_f1gvg")
+level = 8
+
+[node name="Label" type="Label" parent="LevelSelect/HBoxContainer2/Button8"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("6_pjcxg")
+text = "8
+"
+label_settings = SubResource("LabelSettings_t3rf2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button9" type="TextureButton" parent="LevelSelect/HBoxContainer2"]
+layout_mode = 2
+texture_normal = ExtResource("14_7drje")
+texture_pressed = ExtResource("8_3i5be")
+texture_disabled = ExtResource("14_7drje")
+script = ExtResource("17_f1gvg")
+level = 9
+
+[node name="Label" type="Label" parent="LevelSelect/HBoxContainer2/Button9"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("6_pjcxg")
+text = "9
+"
+label_settings = SubResource("LabelSettings_t3rf2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button10" type="TextureButton" parent="LevelSelect/HBoxContainer2"]
+layout_mode = 2
+texture_normal = ExtResource("14_7drje")
+texture_pressed = ExtResource("8_3i5be")
+texture_disabled = ExtResource("14_7drje")
+script = ExtResource("17_f1gvg")
+level = 10
+
+[node name="Label" type="Label" parent="LevelSelect/HBoxContainer2/Button10"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("6_pjcxg")
+text = "10
+"
+label_settings = SubResource("LabelSettings_t3rf2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BackButton" type="TextureButton" parent="LevelSelect"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("4_nv6ej")
+texture_pressed = ExtResource("5_7nuky")
+
+[node name="Label" type="Label" parent="LevelSelect/BackButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("6_pjcxg")
+text = "Back"
+label_settings = SubResource("LabelSettings_t3rf2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CreditsMenu" type="VBoxContainer" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -114.0
+offset_top = -95.0
+offset_right = 114.0
+offset_bottom = 95.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="CreditsMenu"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_pjcxg")
+text = "Game Desgin & Programming:
+Nykya Yevdokymenko"
+label_settings = SubResource("LabelSettings_6gnst")
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="CreditsMenu"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_pjcxg")
+text = "Art:
+Julia Sokolovska"
+label_settings = SubResource("LabelSettings_u33mu")
+horizontal_alignment = 1
+
+[node name="Label3" type="Label" parent="CreditsMenu"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_pjcxg")
+text = "Animation:
+Andrii Khvostenko"
+label_settings = SubResource("LabelSettings_ko8j4")
+horizontal_alignment = 1
+
+[node name="BackButton2" type="TextureButton" parent="CreditsMenu"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("4_nv6ej")
+texture_pressed = ExtResource("5_7nuky")
+
+[node name="Label" type="Label" parent="CreditsMenu/BackButton2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("6_pjcxg")
+text = "Back"
+label_settings = SubResource("LabelSettings_t3rf2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="MainMenu/PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="MainMenu/CreditButton" to="." method="_on_credit_button_pressed"]
+[connection signal="pressed" from="MainMenu/HBoxContainer/InstButton" to="MainMenu/HBoxContainer/InstButton" method="_on_pressed"]
+[connection signal="pressed" from="MainMenu/HBoxContainer/TwitterButton" to="MainMenu/HBoxContainer/TwitterButton" method="_on_pressed"]
+[connection signal="pressed" from="MainMenu/HBoxContainer/DiscordButton" to="MainMenu/HBoxContainer/DiscordButton" method="_on_pressed"]
+[connection signal="pressed" from="LevelSelect/HBoxContainer/Button1" to="LevelSelect/HBoxContainer/Button1" method="_on_pressed"]
+[connection signal="pressed" from="LevelSelect/HBoxContainer/Button2" to="LevelSelect/HBoxContainer/Button2" method="_on_pressed"]
+[connection signal="pressed" from="LevelSelect/HBoxContainer/Button3" to="LevelSelect/HBoxContainer/Button3" method="_on_pressed"]
+[connection signal="pressed" from="LevelSelect/HBoxContainer/Button4" to="LevelSelect/HBoxContainer/Button4" method="_on_pressed"]
+[connection signal="pressed" from="LevelSelect/HBoxContainer/Button5" to="LevelSelect/HBoxContainer/Button5" method="_on_pressed"]
+[connection signal="pressed" from="LevelSelect/HBoxContainer2/Button6" to="LevelSelect/HBoxContainer2/Button6" method="_on_pressed"]
+[connection signal="pressed" from="LevelSelect/HBoxContainer2/Button7" to="LevelSelect/HBoxContainer2/Button7" method="_on_pressed"]
+[connection signal="pressed" from="LevelSelect/HBoxContainer2/Button8" to="LevelSelect/HBoxContainer2/Button8" method="_on_pressed"]
+[connection signal="pressed" from="LevelSelect/HBoxContainer2/Button9" to="LevelSelect/HBoxContainer2/Button9" method="_on_pressed"]
+[connection signal="pressed" from="LevelSelect/HBoxContainer2/Button10" to="LevelSelect/HBoxContainer2/Button10" method="_on_pressed"]
+[connection signal="pressed" from="LevelSelect/BackButton" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="CreditsMenu/BackButton2" to="." method="_on_back_button_2_pressed"]

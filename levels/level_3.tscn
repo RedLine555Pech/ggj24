@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://byphjckir0cwe"]
+
+[ext_resource type="Script" path="res://scripts/Level.gd" id="1_msnfl"]
+[ext_resource type="PackedScene" uid="uid://qc0gy1ey7kh5" path="res://prefabs/pike.tscn" id="2_gsmvk"]
+[ext_resource type="PackedScene" uid="uid://b2tyedb5pxwka" path="res://prefabs/collectable.tscn" id="3_7fc3h"]
+[ext_resource type="PackedScene" uid="uid://bao60qawichnn" path="res://prefabs/platform.tscn" id="4_p88x3"]
+
+[node name="Level3" type="Node2D"]
+script = ExtResource("1_msnfl")
+start_mood = 10
+
+[node name="Pike" parent="." instance=ExtResource("2_gsmvk")]
+position = Vector2(513, 750)
+
+[node name="Pike2" parent="." instance=ExtResource("2_gsmvk")]
+position = Vector2(1138, 576)
+
+[node name="Pike3" parent="." instance=ExtResource("2_gsmvk")]
+position = Vector2(1492, 576)
+
+[node name="Collectable" parent="." instance=ExtResource("3_7fc3h")]
+position = Vector2(1136, 464)
+
+[node name="Collectable3" parent="." instance=ExtResource("3_7fc3h")]
+position = Vector2(1491, 459)
+
+[node name="Collectable2" parent="." instance=ExtResource("3_7fc3h")]
+position = Vector2(565, 573)
+
+[node name="Platform" parent="." instance=ExtResource("4_p88x3")]
+position = Vector2(748, 579)
