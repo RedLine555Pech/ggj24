@@ -9,10 +9,18 @@ signal picked
 func _ready():
 	collectable = $Collectable
 	collectable.picked.connect(on_picked)
+	animate()
+	
+func animate():
+	if !$Collectable:
+		return
+	if tween:
+		tween.kill()
 	tween = create_tween()
 	tween.tween_property($Collectable, "position", move_pos, time)
 	tween.tween_property($Collectable, "position", Vector2.ZERO, time)
-	tween.set_loops()
+	tween.tween_callback(animate)
 	
 func on_picked():
+	tween.stop()
 	picked.emit()
